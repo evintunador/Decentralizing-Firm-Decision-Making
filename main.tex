@@ -1,0 +1,252 @@
+\documentclass{article}[10pt]
+
+\usepackage[utf8]{inputenc}
+
+\usepackage{graphicx}
+%\twocolumn
+\usepackage[a4paper, total={6.5in, 10in}]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+
+\usepackage[notes,backend=biber]{biblatex-chicago}
+%\usepackage{cite}
+\bibliography{bib}
+
+\usepackage{lscape} %allows landscape page
+
+\usepackage{xcolor} % for the "DRAFT" header
+\usepackage{fancyhdr} % for the "DRAFT" header
+\pagestyle{fancy}
+
+\usepackage{amsmath}
+
+\title{Decentralizing Firm Decision Making}
+\author{Evin Tunador}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\hline
+\vspace{0.1in}
+\textcolor{red}{written 2023.1.27}\\
+
+Start company as normal.
+At a certain point where it becomes profitable and there are at least multiple if not a dozen+ employees, announce the transition to a cooperative.
+Define the cooperative structure as follows:
+\begin{itemize}
+    \item base salaries are determined to meet the average of the market wage for that position, adjusted for relevant factors like geography.
+    minimum livable salary is also set
+    \item base duties are defined for every position.
+    base duties are the minimum required tasks to be performed, and usually expected/designed to take ~30hrs/week (or maybe 35 or 40 if times are tough)
+    \item CEO/Owner's base salary is determined as a multiple of the average worker salary.
+    This multiple is relatively modest, I'd guess 3-15 times larger.
+    \item half of leftover profits are distributed to current and past employees according to how many weeks they've worked at the company.
+    Potential minimum number of weeks (six months? one year?) needed to work in order to be eligible for this benefit.
+    \item the other half of leftover profits are distributed according to the following system:
+    \begin{itemize}
+        \item an inner-company currency/token is created.
+        these tokens are distributed to RSNs (as defined by SECCs) according to that RSNs ratio of incoming revenue to the company's total incoming revenue
+        \begin{itemize}
+            \item alternatively, every single employee starts the fiscal year with an equal amount iner-company tokens
+        \end{itemize}
+        \item Non-base tasks are defined by RSN owners.
+        Non-base tasks should be 1) not critically necessary, 2) flexible as to who performs them and 3) flexible as to when they are performed.
+        Each non-base task can have qualification criteria to clarify who is qualified to perform it
+        \begin{itemize}
+            \item alternatively, anybody can define a non-base task
+        \end{itemize}
+        \item workers exchange their labor on non-base tasks for the inner-company token
+        \item at the end of the fiscal year, the remaining 50\% of profits is distributed according to ownership of the inner-company token.
+        If you own 1\% of the inner-company tokens in existence then you receive 0.5\% of the company's profits
+    \end{itemize}
+\end{itemize}
+
+
+
+\vspace{0.1in}
+\hline
+\vspace{0.1in}
+\textcolor{red}{written for SECC paper 2023.1.21}\\
+
+
+
+Now that we've defined the "Subsettable" part, and since the "Cooperative" word was already described in Subsection \ref{subsection:cooperative}, we can move on to the "Clusters" piece of the SECC acronym. 
+When thinking about relationships between individuals within an on-chain organization, there are multiple questions which the motivate the idea to come.
+How might organizations restricted to the blockchain be able to efficiently interact with the off-chain real world?
+Can incentive structures be designed to reliably incorporate off-chain sources of revenue?
+What is the optimal number of individuals to comprise a group?
+By what means can we reach this ideal number, which may be group-specific and therefore need to be defined on a case-by-case basis?
+Under what conditions would an individual be motivated to join or leave a group?
+What do these entry and exit processes involve?
+How can we design these incentives and processes to ensure that groups reach their ideal membership size?
+Might an individual feel locked into a given Subsettable Organization if it is a sub-SECC of another more important umbrella-SECC?\footnote{
+    For example, Best Friends Union is a subset of a health insurance SECC, and one would not want their exit from BFU to necessarily and fully terminate their health insurance. 
+    This would effectively trap the individual by making it against their best interest to leave the sub-SECC.} \par 
+
+Enter organizationss as "Clusters," which we define as groupss with sources of incoming revenue where each individual's role and membership is dynamically defined and mapped by connections involving 1) revenue that cascades out from those with direct access to a revenue stream and 2) incentive structures coming both top-down from the revenue stream holder(s) and horizontally from other individuals attached to the same revenue stream. 
+The goal here is to merge on-chain activity, decision making processes, and incentive structures with that of off-chain real-life businesses.\par
+
+Take for example the first individual with a revenue stream, myself, the founder of and first holder of the "Innovator" position at EvCorp.
+Presumably when starting this business I have enough money to fund it in the short term.
+By trading in my government money for cryptocurrency, I will be creating the first Revenue Stream Node ("RSN"). 
+From here I will be designing a series of incentive structures that pay out cryptocurrency from my RSN to individuals upon their completion of work.
+I personally prefer working with people that I know to some degree, even if just by zoom call.
+As such, once I find employees, EvCorp's Revenue Stream Node will pay them an agreed upon amount every other Friday if I feel satisfied with their progress, or otherwise terminate the relationship.\par
+
+As of yet, nothing about this structure has differed from what a traditional legal corporation is designed to do, except that my employees don't have the same benefits or protections under the law due to EvCorp's existence solely on the blockchain.
+It is also the case that in a DAO this design would not be possible.
+The structure I have detailed so far is centralized in that I, a single entity, maintain complete authority over EvCorp's goals, decision making, and distribution of rewards.
+Many blockchain and DAO fanatics (henceforth "Crypto-Chads") will be put off by how this proposal is beginning and suggest that I instead go and start a corporation.
+Again, the goal here is not decentralization for decentralization's sake, but rather to blur the lines between DAOs and traditional corporations by unifying on-chain and off-chain incentive structures.
+It is important to remind decentralization-loving Crypto-Chads that top-down governance structures can have benefits as well, such as faster decision-making and the ability to enact concrete plans over the long term.\footnote{
+    \textcolor{red}{footnote describing said benefits. Efficiency, decisiveness, taking counterintuitive approaches, focusing on long term goals, etc.}}\par
+
+Anyways, at EvCorp I have a few ideas for how to get started. 
+As described in Subsection \ref{subsection:EvCorp}, I'll want to begin with a teacher with a PhD in a subject I am curious about to help in my studies, maybe an assistant, and a software developer to run the website.\footnote{
+    In reality, we might want multiple programmers, teachers, etc. but keeping each position in the singular will trim down on the writing and avoid unnecessary complications in the explanation. 
+    For now, and for the developer especially, let us just give the person in each position god-like productivity powers when necessary.}
+The programmer will become our second revenue stream once the website starts generating ad revenue.
+In a traditional corporation, I as founder would own the website, so I would be within my rights to remove the developer's access, replace them with someone else, and sue them if they stole any of the company's intellectual property.
+However, since EvCorp is just a Cluster Organization with no legal ownership of each individual's work, the programmer has full control of a new revenue stream.
+They may decide to do with the money what they like, whether that be to boost their own income or to establish their position in EvCorp as a new RSN.\par
+
+You might be wondering how I control my newly powerful employee.
+Well, I might not; the programmer has free will, incentives that could conflict with my goals, and no leash around their neck.
+If they decide that the resources in their direct control are profitable enough on their own, then they have the option of splitting off and starting their own business.
+In this sense, EvCorp is directly defined as whatever individuals receive funding from and therefore work towards the goals of my RSN.
+However, the money streaming from my RSN may still be enough to keep the developer working with me.
+Furthermore, a split from EvCorp would leave the programmer without access to the teacher who has been making the videos that bring in the ad revenue.
+Unless said income is lucrative enough to steal the teacher away from me, then I now have a second bargaining chip.
+In exchange for me funding the teacher and potentially directly paying the website developer some amount as well, I will still maintain influence over how our website is run.
+At any point in the future, the deal may have to be edited depending on the changing power dynamics between our RSNs.
+Maybe eventually the programmer brings in so much ad revenue that they can even steal the teacher away from me.\par
+
+Now suddenly EvCorp consists of two RSNs with pay structures feeding down to the non-RSN employees that adjust dynamically based on how each owner thinks they can best optimize their own revenue stream.
+At any given time, does one RSN send money to influence the other, or do they act as separate entities?
+For visual depictions of each scenario, see Figure \ref{fig:clusterInteraction}.
+The first case was described in the previous paragraph.
+The second involves neither EvCorp nor the programmer's RSN seeing any benefit in extorting influence over one another, but they do happen to share employees.
+Each shared employee might experience different ratios of pay from the two, while others will only be paid by one RSN or the other.
+For example, the teacher could split their time between the two according to who pays most, while my assistant would be entirely EvCorp funded.\footnote{
+    \textcolor{red}{in some footnote I need to define a model of two RSNs competing for a single employee's time and how that results in a larger percent of profit going towards labor. 
+    Contract workers that take gigs from multiple companies already take advantage of this effect (so maybe I can co-opt some research about them) but this brings that dynamic to all employees of single companies.
+    Not sure if that model should go in this footnote or one that shows up later}}\par
+
+
+
+\begin{figure}[! ht]
+    \centering
+
+    \begin{tabular}{c|c}
+        \includegraphics[width=0.5\textwidth]{figures/IMG_38A57C8FE8C1-1.jpeg.pdf} & 
+        \includegraphics[width=0.5\textwidth]{figures/IMG_C8BDE58C72C5-1.jpeg.pdf}\\
+    \end{tabular}
+    
+    \caption{caption}
+    \label{fig:clusterInteraction}
+\end{figure}
+
+
+Finally, we are ready to strictly define the title term of this Subsection.
+A "Cluster" consists of at least one RSN paying at least one individual for their labor, whether that work be verified by on-chain decentralized means or through the off-chain real-life interaction of the individuals involved.\footnote{
+     On-chain decentralized means of employment can use the same incentive and verification structures already implemented in traditional smart contracts and DAOs.
+     Off-chain labor can be verified just as is done by traditional legal corporations, meaning a manager (the RSN owner) either witnesses their employees' labor in person or, in the case of a remote worker, waits to receive work product before verifying satisfactory performance.}
+Further components to the definition of a Cluster Organization are as follows:
+\begin{itemize}
+    \item Two RSNs are deemed to be part of one single Cluster if one RSN, the "payer," partially funds another, the "payee," in order to incentivize the latter to help work towards the goals of the former.
+    
+    \item For chains of three or more RSNs, the one not receiving funding from any other is referred to as "central."
+    Those receiving funds directly from the central RSN are deemed "first peripheral," while those receiving funds directly from a first peripheral RSN are deemed "second peripheral," and so on.
+    These can be referred to in aggregate as "peripheral RSNs."
+    
+    \item A cluster is referred to according to the name of its central RSN.
+    
+    \item When one RSN directly funds two or more peripherals, the chain of peripheral RSNs is said to be "branched," creating "siblings." 
+    However, that is as far as the use of familial terms should go, because RSNs need not send money down the line linearly.
+    
+    \item An RSN might choose to funnel money horizontally to another at the same peripheral order as well as upwards to an RSN of higher peripheral order.
+    However, this higher order payee should be outside of the direct line between the payer and the central RSN. See Figure \ref{fig:funnelUp}.
+    
+    \item Any given relationship must consist of at least one individual employee or peripheral RSN downstream of the central RSN in order to be considered a Cluster, but a peripheral RSN need not necessarily hire any individual employees.
+    
+    \item Two or more RSNs, either within the same Cluster or in different Clusters, can fund a single employee.
+    If an individual is funded by two or more RSNs from different Clusters, they are said to be employed by more than one Cluster.
+    Because we are using Clusters rather than RSNs in our linguistic analogy to companies, one individual funded by two or more RSNs within the same Cluster is not said to have more than one source of employment.
+    Rather, these cases should be thought of as analogous to an employee that does work for/with more than one department within a company.
+
+    \item Although individual employees are not RSNs in that they do not bring in new money, they do in all other ways function the same as an RSN.
+    This means that they can send money to other individual employees and even to RSNs.
+    This money can travel down the chain, horizontally to other individuals or RSNs at the same peripheral order, and even up the chain as long as it is not going to an individual or RSN placed directly between themselves and the central RSN.
+    The only thing differentiating individual employees from RSNs is the fact that RSNs have a source of off-chain or at least off-cluster revenue, whereas individual employees receive all their funding from others within their cluster.
+    Now with this new definition of employees, it is more fitting to use the term "Labor Node" ("LN") because it better expresses their functional similarity to RSNs. See Figure \textcolor{red}{X} for a depiction of money streaming through LNs the way it does through RSNs.
+\end{itemize}
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=\textwidth]{figures/IMG_680F7D487817-1.pdf}
+    \caption{\textcolor{red}{need a diagram showing LN's as being able to pump money through each other as well}}
+    \label{fig:funnelUp}
+\end{figure}
+
+Let us compare this new structure to that of traditional corporations.
+In the latter all property, revenue streams, and liabilities are owned solely by the legal entity.
+These companies have a top-down power structure with the CEO deciding how to allocate resources, tasks, and funding.
+This necessarily means that decentralized economic information will not be accounted for, an issue that only gets worse as the company grows in size.
+Decentralized economic information are those facts which can only be known at the detail of the individual employee or owner of a very small business.\autocite{hayek1945use}
+When writing out the company budget, deciding how many employees to hire, and how to distribute the workload, there is no way the executives on the top floor could have an accurate idea of each employee's capacity.
+This is obvious to anyone who has sat around the office with nothing to do, or struggled to meet an unrealistic deadline.\par
+
+The top-down power structure makes traditional legal corporations inherently inefficient for the same reason that centrally planned economies are inefficient.
+Centrally planned economies are those for which the government takes over the role of the free market system in deciding where to allocate resources.\footnote{
+    \textcolor{red}{source}}
+Rather than spend money at the supermarket for however much bread your family needs, the government gives you an amount of bread it predicts you will need.
+The difference is that when a centrally planned economy fails an entire nation is destabilized, whereas when a corporation fails everyone just looks for a new job and a different company will peacefully fill the void.
+It is through this trial and error process that entrepreneurs have been able to create wealth in aggregate for capitalist economies.
+If anything, the inevitable failure of corporations (none last forever, and few more than \textcolor{red}{X} decades\footnote{
+    \textcolor{red}{source}})
+has acted as their only saving grace by creating a gambling arena that incentivizes entrepreneurs to subsidize the growth of capitalist economies with the money they put into failed ventures.\footnote{
+    \textcolor{red}{cite taleb for providing this interpretation of the advantages of free-market economies}}
+This failure-followed-by-replacement mechanism is analogous to the survival-of-the-fittest dynamic in evolution and acts to partially compensate for the inefficiencies of the currently commonplace top-down power structure in corporations.
+Furthermore, it is through this same competitive dynamic that we should expect to eventually find a superior system to top-down control.
+It is reasonable to praise capitalism for the increase in living standards it has created through its encouragement of specialization, this survival-of-the-fittest dynamic, and its partial incorporation of decentralized information, but to idolize the current commonplace company structure is akin to arguing that a given biological species has no more need to evolve.\par
+
+In contrast, with clusters each resource, incoming revenue stream, and source of liability is owned and controlled by an individual.
+Individuals within a cluster incentivize one another to work towards each others' goals through the simplest means available: paying each other the market price in exchange for their labor and access to their capital.\footnote{
+    For the non-technical reader, capital is defined as "anything that confers value or benefit to its owners, such as a factory and its machinery, intellectual property like patents, or the financial assets of a business or an individual." In economics the two drivers of wealth are labor and capital, and in recent years capitalist economies have seen the share of income attributable to capital rise while that of labor has stagnated. This means that companies and those who own them have continued to get even richer, while the average person has fallen behind. Cluster organizations attempt to give ownership of capital back to the employees responsible for creating the capital in the first place, thereby diminishing wealth inequality.\\
+    \indent \indent \fullcite{capitalDefinition}\\
+    \indent \indent \textcolor{red}{source for share of income going to capital increasing since whatever decade. 
+    Maybe both a solow model estimate and a reference to eric weinstein's discussion of its importance and the general fuckery that's been happening since whatever date}}
+As such, all work is essentially brought into the gig economy.
+Furthermore, just as prices have been used to quickly and efficiently communicate decentralized information in the consumer market, they can now finally do the same in the labor market.
+For decades labor movements have rightfully fought against this occurring because supply and demand are not frequently kind to the common worker.
+However, that is no longer the case now that 1) laborers can easily and more efficiently get benefits through Subsettable Organizations that have traditionally been attained through employers, such as group health insurance, 2) the source of money is now broken up between many revenue streams instead of a single decision maker, thereby increasing demand for labor since RSNs within a cluster (which are akin to team or department leaders within a corporation) must compete for an employee's work, and 3) ownership of capital has been partially redistributed from the capitalist to the workers.\par
+
+In EvCorp, I have direct access to my bank account that I used to kickstart the venture, and presumably my research will eventually bear fruit with a money-making patent or business idea that can take over the job of funding my RSN.
+I will likely hire an entrepreneur to run said venture rather than do it myself, and they will be able to create their own RSN once the business starts making money.
+The programmer has direct access to the website that makes money off ad revenue, so they fully control what happens with that website and the money it generates.
+They then create an RSN to pay out money to other employees in exchange for their labor, with the goal of further augmenting the revenues of the website.
+As the online lectures and idea discussion forums attract users, they will eventually educate people who will then have their own money-making ideas.
+Those people can create their own RSNs which may or may not join my cluster.
+The lawyer will do all the boring lawyer-y things for whichever of these new ideas happen to be patentable, thereby generating revenue for themselves from legal fees and for the innovators from licensing royalties.\footnote{
+    \textcolor{red}{footnote addressing concerns here with idea ownership and whatnot}}
+The lawyer will create their own RSN which pays out the programmer's to have their ads put up on the website and encourage the creation of more patent-able ideas.
+The teacher will be the Labor Node funded by both the programmer who posts video lectures and the innovators that want direct tutoring.
+This structure comes together to create a symbiotic relationship between laborers,\footnotemark the owners of capital,\footnotemark and those that fit into both categories.\footnotemark \par
+\footnotetext{The teacher and the lawyer.}
+\footnotetext{The innovators.}
+\footnotetext{The programmer and entrepreneur.}
+
+In contrast, if I had started EvCorp as a legal company, then I would own the website, the teacher's video lectures, and the intellectual property of the innovators.
+This traditional dynamic would open the possibility for me to pay them far below their true value since I come to own all the capital they create immediately upon its inception.
+In this sense, the traditional market value for labor does not properly measure the downstream effect of capital created by labor, and therefore undervalues said labor.
+For example, the programmer is significantly more valuable when they own and stay in control of their own website creation.
+However, thanks to EvCorp's partially-decentralized ownership through split streams of revenue, I am forced to take into account the interests of at least every individual with their own RSN rather than just myself.
+While this is not 100\% employee ownership since LNs, such as the teacher, still exist without their own revenue stream, I think it should be pretty clear that the perverse incentives of top-down structures have been mitigated by distributing power among many key individuals rather than a single parasitic owner. 
+
+\hline
+\vspace{0.1in}
+
+
+\end{document}
